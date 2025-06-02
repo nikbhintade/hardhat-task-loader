@@ -1,0 +1,36 @@
+{
+  "name": "hardhat-task-loader",
+  "version": "0.0.1",
+  "description": "Automatically loads all Hardhat tasks",
+  "keywords": [
+    "hardhat",
+    "ethereum",
+    "evm",
+    "solidity"
+  ],
+  "author": "Nikhil Bhintade <nikbhintade@proton.me>",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
